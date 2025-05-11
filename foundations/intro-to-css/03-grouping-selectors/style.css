@@ -1,0 +1,14 @@
+.font-setter {
+    font-size: 28px;
+    font-family: 'Helvatica', 'Times New Roman', sans-serif;
+}
+
+.black {
+    background-color: rgb(41, 41, 41);
+    color: white;
+    font-weight: 700;
+}
+
+.yellow {
+    background-color: rgb(255, 255, 73);
+}
