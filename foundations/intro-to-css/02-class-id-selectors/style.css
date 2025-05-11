@@ -1,0 +1,19 @@
+.odd {
+    background-color: lightcoral;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.medium-size-text {
+    font-size: 30px;
+}
+
+#number-2 {
+    font-size: 45px;
+    color: blue;
+}
+
+#number-4 {
+    background-color: lightgreen;
+    font-weight: bold;
+}
