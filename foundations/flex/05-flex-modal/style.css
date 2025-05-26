@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 html, body {
   height: 100%;
 }
@@ -17,9 +23,17 @@ body {
 
 .modal {
   background: white;
-  width: 480px;
+  width: 32rem;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+
+  /* Stop icon from distorting */
+  & .icon {
+    flex: 0 0 auto;
+  }
 }
 
 .icon {
@@ -35,6 +49,22 @@ body {
   justify-content: center;
 }
 
+.main-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap : 10px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: 700;
+}
+
 .close-button {
   background: #eee;
   border-radius: 50%;
@@ -48,6 +78,7 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  display: inline;
 }
 
 button {
@@ -60,6 +91,7 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  font-weight: 600;
 }
 
 button.cancel {
