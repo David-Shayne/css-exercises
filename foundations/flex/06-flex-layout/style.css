@@ -20,19 +20,20 @@ ul {
 
 body {
   height: 100vh;
-  margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
   padding: 16px;
 
   & > ul {
@@ -40,6 +41,19 @@ body {
     gap: 16px;
   }
   
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  max-width: 1500px;
+  margin: 0 auto;
+
+  ul {
+    display: flex;
+    gap: 8px;
+  }
 }
 
 .content {
@@ -73,11 +87,4 @@ input {
   background: rgb(230, 230, 230);
   padding: 12px;
   width: 100vw;
-  display: flex;
-  justify-content: space-between;
-
-  & > ul {
-    display: flex;
-    gap: 8px;
-  }
 }
